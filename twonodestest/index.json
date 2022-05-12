@@ -21,7 +21,9 @@
       "text": "finish.md"
     }
   },
-  "environment": {},
+  "environment": {
+    "uilayout": "terminal"
+  },
   "backend": {
     "imageid": "bash-cluster2"
   }
