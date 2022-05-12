@@ -1,0 +1,16 @@
+{
+  "title": "Foundation of Cloud Computing for Openstack",
+  "description": "Tour of OSS technologies underpinning Openstack.",
+  "courses": [
+    {
+      "course_id": "qemu-intro",
+      "title": "Intro to QEMU",
+      "description": "TODO"
+    },
+    {
+      "course_id": "lvm-intro",
+      "title": "Introduction to LVM",
+      "description": "TODO"
+    }
+  ]
+}
