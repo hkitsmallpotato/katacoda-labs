@@ -41,11 +41,11 @@
       "host01": [
         {
           "file": "tcat.sh",
-          "target": "~/"
+          "target": "/root"
         },
         {
           "file": "local.conf",
-          "target": "~/"
+          "target": "/root"
         }
       ]
     }
