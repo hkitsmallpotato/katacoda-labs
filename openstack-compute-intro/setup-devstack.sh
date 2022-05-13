@@ -21,11 +21,16 @@ cp ~/local.conf /opt/stack/
 chown stack /opt/stack/*
 chmod 755 /opt/stack/tcat.sh
 
-su - stack
+su - stack <<EOF
 git clone https://git.openstack.org/openstack-dev/devstack
 
 export LOCAL_IP=`ip -j -4 a show ens3 | jq .[].addr_info[].local`
 
 ./tcat.sh local.conf > ./devstack/local.conf
 
-cd devstack/ && ./stack.sh
+echo "===== Content of local.conf ====="
+cat ./devstack/local.conf
+echo "===== Prepare to install devstack in 3 seconds ====="
+
+sleep 3 && cd devstack/ && ./stack.sh
+EOF
