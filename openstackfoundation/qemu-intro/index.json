@@ -23,10 +23,22 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "metadata.yaml",
+          "target": "/root"
+        },
+        {
+          "file": "user-data.yaml",
+          "target": "/root"
+        }
+      ]
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "editor-terminal"
   },
   "backend": {
     "imageid": "ubuntu:2004"
