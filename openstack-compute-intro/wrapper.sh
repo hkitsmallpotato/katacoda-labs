@@ -1,3 +1,9 @@
 #!/bin/bash
 
-chmod 755 setup-devstack.sh && sh setup-devstack.sh
+cat > myvar <<EOF
+HOST_SUBDOMAIN=[[HOST_SUBDOMAIN]]
+KATACODA_HOST=[[KATACODA_HOST]]
+KATACODA_DOMAIN=[[KATACODA_DOMAIN]]
+EOF
+
+echo "Saved variables."
