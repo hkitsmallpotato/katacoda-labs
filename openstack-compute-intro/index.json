@@ -54,9 +54,11 @@
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "showdashboards": true,
+    "uilayout": "terminal-iframe"
   },
   "backend": {
-    "imageid": "ubuntu:2004"
+    "imageid": "ubuntu:2004",
+    "port": 80
   }
 }

@@ -16,6 +16,12 @@ Then allocate one:
 
 `openstack server add floating ip testvm <ip-addr>`
 
+## Allow SSH connection by adding Security Group Rule
+
+Our VM is associated with the `default` Security Group, which do not allow inbound connection from outside the subnet. We must explicitly authorize an exception by adding a rule to the security group.
+
+`openstack security group rule create --remote-ip 0.0.0.0/0 --dst-port 22 --protocol tcp --ingress default`{{execute}}
+
 ## SSH into server
 
 `openstack ssh server testvm -- -i ~/.ssh/id_rsa -u cirros`
