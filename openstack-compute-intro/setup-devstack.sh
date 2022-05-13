@@ -2,9 +2,14 @@
 
 mkswap /swap.img && swapon /swap.img
 
-sudo apt update
-sudo apt -y upgrade
-sudo apt -y dist-upgrade
+export DEBIAN_FRONTEND=noninteractive
+sudo apt-get update
+sudo apt-get \
+  -o Dpkg::Options::=--force-confold \
+  -o Dpkg::Options::=--force-confdef \
+  -y --allow-downgrades --allow-remove-essential --allow-change-held-packages \
+  upgrade
+sudo apt-get -y dist-upgrade
 
 sudo useradd -s /bin/bash -d /opt/stack -m stack
 echo "stack ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/stack
