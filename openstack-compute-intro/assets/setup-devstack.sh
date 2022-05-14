@@ -18,6 +18,7 @@ echo "stack ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/stack
 
 cp ~/tcat.sh /opt/stack/
 cp ~/local.conf /opt/stack/
+cp ~/myvar /opt/stack/
 chown stack /opt/stack/*
 chmod 755 /opt/stack/tcat.sh
 
@@ -26,7 +27,7 @@ git clone https://git.openstack.org/openstack-dev/devstack
 
 export LOCAL_IP=`ip -j -4 a show ens3 | jq .[].addr_info[].local`
 
-./tcat.sh local.conf > ./devstack/local.conf
+(source myvar; export $(cut -d= -f1 myvar); ./tcat.sh local.conf > ./devstack/local.conf)
 
 echo "===== Content of local.conf ====="
 cat ./devstack/local.conf
