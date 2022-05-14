@@ -4,7 +4,7 @@
 
 First install all packages needed in this lab:
 
-`apt install qemu-system-x86 cloud-image-utils mlocate`{{execute}}
+`apt install -y qemu-system-x86 cloud-image-utils mlocate`{{execute}}
 
 ## Preparing files
 
@@ -12,7 +12,7 @@ First generate our ssh keys:
 
 `ssh-keygen`{{execute}}
 
-Follow the instructions and provide your own path distinct from the existing `id_rsa` file.
+Follow the instructions and provide your own path distinct from the existing `id_rsa` file. (We will be using `/root/.ssh/id_mykey`)
 
 Open the public key file (the one with suffix `.pub`) for use later.
 
