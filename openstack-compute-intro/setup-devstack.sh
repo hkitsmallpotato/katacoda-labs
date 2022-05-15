@@ -2,7 +2,17 @@
 
 set -e
 
-mkswap /swap.img && swapon /swap.img
+rm /swap.img
+
+mkdir /mnt/data
+mkfs.ext4 /dev/vdd
+mount /dev/vdd /mnt/data
+dd if=/dev/zero of=/mnt/data/swap.img bs=1024 count=5120000
+mkswap /mnt/data/swap.img && swapon /mnt/data/swap.img
+
+pvcreate /dev/vdb
+pvcreate /dev/vdc
+vgcreate stack-volumes /dev/vdb /dev/vdc
 
 apt-get update
 DEBIAN_FRONTEND=noninteractive \
