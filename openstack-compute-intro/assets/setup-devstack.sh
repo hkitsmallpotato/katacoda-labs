@@ -2,7 +2,17 @@
 
 set -e
 
-mkswap /swap.img && swapon /swap.img
+rm /swap.img
+
+mkdir /mnt/data
+mkfs.ext4 /dev/vdd
+mount /dev/vdd /mnt/data
+dd if=/dev/zero of=/mnt/data/swap.img bs=1024 count=5120000
+mkswap /mnt/data/swap.img && swapon /mnt/data/swap.img
+
+pvcreate /dev/vdb
+pvcreate /dev/vdc
+vgcreate stack-volumes /dev/vdb /dev/vdc
 
 apt-get update
 DEBIAN_FRONTEND=noninteractive \
@@ -27,7 +37,10 @@ git clone https://git.openstack.org/openstack-dev/devstack
 
 export LOCAL_IP=`ip -j -4 a show ens3 | jq .[].addr_info[].local`
 
-(source myvar; export $(cut -d= -f1 myvar); ./tcat.sh local.conf > ./devstack/local.conf)
+set -a
+source myvar
+set +a
+./tcat.sh local.conf > ./devstack/local.conf
 
 echo "===== Content of local.conf ====="
 cat ./devstack/local.conf
