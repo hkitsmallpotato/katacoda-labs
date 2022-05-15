@@ -27,7 +27,10 @@ git clone https://git.openstack.org/openstack-dev/devstack
 
 export LOCAL_IP=`ip -j -4 a show ens3 | jq .[].addr_info[].local`
 
-(source myvar; export $(cut -d= -f1 myvar); ./tcat.sh local.conf > ./devstack/local.conf)
+set -a
+source myvar
+set +a
+./tcat.sh local.conf > ./devstack/local.conf
 
 echo "===== Content of local.conf ====="
 cat ./devstack/local.conf
