@@ -1,0 +1,9 @@
+{
+    "items": [
+        {
+            "path": "openstackfoundation", 
+            "title": "Foundation of Cloud Computing for Openstack",
+            "description": "Tour of OSS technologies underpinning Openstack."
+        }
+    ]
+}
