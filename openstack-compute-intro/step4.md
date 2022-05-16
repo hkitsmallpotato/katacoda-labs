@@ -12,6 +12,8 @@ Then allocate one:
 
 `openstack floating ip create public`{{execute}}
 
+Note down the IP address.
+
 ## Association of floating IP
 
 `openstack server add floating ip testvm <ip-addr>`
@@ -24,4 +26,4 @@ Our VM is associated with the `default` Security Group, which do not allow inbou
 
 ## SSH into server
 
-`openstack ssh server testvm -- -i ~/.ssh/id_rsa -u cirros`
+`openstack server ssh testvm -- -i ~/.ssh/id_rsa -l cirros`{{execute}}
