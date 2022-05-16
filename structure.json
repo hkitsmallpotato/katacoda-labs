@@ -4,6 +4,26 @@
             "path": "openstackfoundation", 
             "title": "Foundation of Cloud Computing for Openstack",
             "description": "Tour of OSS technologies underpinning Openstack."
+        },
+        {
+            "path": "openstack-compute-intro",
+            "title": "Compute Service in Openstack",
+            "description": "TODO"
+        },
+        {
+            "path": "openstack-compute-metadata",
+            "title": "Metadata and cloud-init for Openstack Compute",
+            "description": "TODO"
+        },
+        {
+            "path": "helloworld",
+            "title": "Hello World",
+            "description": "Testing Katacoda Setup"
+        },
+        {
+            "path": "twonodestest",
+            "title": "Two Node Test",
+            "description": "Testing katacoda provided images"
         }
     ]
 }
