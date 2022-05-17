@@ -42,3 +42,4 @@ To see what a jinja template will render into after substitution by parameters f
 ## Other reference
 
 https://stackoverflow.com/questions/41942469/openstackcli-access-propertys-from-cloudinit-script
+http://madorn.com/openstack-metadata-types.html
