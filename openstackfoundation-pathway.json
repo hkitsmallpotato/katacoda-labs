@@ -16,6 +16,16 @@
       "course_id": "qemu-img",
       "title": "QEMU Image",
       "description": "TODO"
+    },
+    {
+      "course_id": "ovs-intro",
+      "title": "Intro to OpenVSwitch",
+      "description": "TODO"
+    },
+    {
+      "course_id": "openstack-network-implement",
+      "title": "Implementing Openstack Network Model",
+      "description": "Understand how Openstack Networking is implemented"
     }
   ]
 }
