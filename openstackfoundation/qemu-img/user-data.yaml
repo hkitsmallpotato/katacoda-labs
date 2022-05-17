@@ -1,0 +1,3 @@
+#cloud-config
+ssh_authorized_keys:
+  - [[paste your ssh public key here. e.g. ssh-rsa AAAAB3NzaC1yc2E...]]

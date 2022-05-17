@@ -11,6 +11,11 @@
       "course_id": "lvm-intro",
       "title": "Introduction to LVM",
       "description": "TODO"
+    },
+    {
+      "course_id": "qemu-img",
+      "title": "QEMU Image",
+      "description": "TODO"
     }
   ]
 }
