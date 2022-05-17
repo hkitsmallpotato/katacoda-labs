@@ -12,3 +12,22 @@ In particular:
 - I used the various [special layout](https://www.katacoda.community/essentials/layouts.html) supported by katacoda.
 
 In the long term though, I think there need to be a separation of content from infrastructure so that some kind of provider independence can be achieved. (E.g. if user is willing, can provision it on their own infra/at their cost in an automated manner)
+
+## Link to the lab
+
+- [Katacoda](https://katacoda.com/hkitsmallpotato)
+- [Killercoda](https://killercoda.com/hkitsmallpotato)
+
+## Status of the labs
+
+- Foundation of Cloud Computing for Openstack
+  - Intro to QEMU (Done except figuring out how to do NAT)
+  - QEMU Image (Only a sketch. But the commands are what I use in my home computer and mostly tested. Just need to disable graphics)
+  - Intro to LVM (Done)
+  - Intro to OpenVSwitch (Placeholder only with background text)
+  - Implementing Openstack Network Model (Placeholder only with background text and references)
+- Openstack Lab Series
+  - Compute Service in Openstack (Manually tested and work in some previous version of the lab, though the details may have drifted)
+  - Metadata and cloud-init for Openstack Compute (Can boot cloud ubuntu, login, and use the `cloud-init` program. Still need to figure out where Openstack metadata/property can be retrieved inside the instance)
+  - Types of Openstack Network (Placeholder only with background text and reference)
+  - Virtual Network in Openstack (TODO)
