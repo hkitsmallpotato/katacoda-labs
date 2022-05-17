@@ -1,5 +1,5 @@
 {
-  "title": "QEMU Image",
+  "title": "Intro to OpenVSwitch",
   "description": "TODO",
   "difficulty": "Intermediate",
   "time": "60 minutes",
@@ -16,6 +16,10 @@
       {
         "title": "Step 3",
         "text": "step3.md"
+      },
+      {
+        "title": "Step 4",
+        "text": "step4.md"
       }
     ],
     "intro": {
@@ -23,18 +27,6 @@
     },
     "finish": {
       "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        {
-          "file": "metadata.yaml",
-          "target": "/root"
-        },
-        {
-          "file": "user-data.yaml",
-          "target": "/root"
-        }
-      ]
     }
   },
   "environment": {
