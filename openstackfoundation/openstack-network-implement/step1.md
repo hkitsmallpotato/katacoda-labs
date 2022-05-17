@@ -1,4 +1,6 @@
 
+Placeholder: For another more beginner level lab that teaches how to create tenant network from a purely end user point of view, we will use https://superuser.openstack.org/articles/everything-you-need-to-know-to-get-started-with-neutron-f90e2797-26b7-4d1c-84d8-effef03f11d2/ as the primary reference.
+
 Note: this one is the most ambitious lab by all - I'm still figuring out how much effort is needed to develop this one.
 
 # Comparison with Kubernetes Networking Model
@@ -16,3 +18,6 @@ On the other hand, their similarities:
 
 https://networkop.co.uk/blog/2016/04/22/neutron-native/
 
+http://jedelman.com/home/the-openstack-network-node-layer-3-agent/
+https://vietkubers.github.io/2018-09-19-openstack-neutron-l3-agent.html
+https://www.sidorenko.io/post/2018/11/openstack-networking-open-vswitch-and-vxlan-introduction/
