@@ -16,6 +16,11 @@
             "description": "TODO"
         },
         {
+            "path": "openstack-network-type",
+            "title": "Types of Openstack Network",
+            "description": "TODO"
+        },
+        {
             "path": "helloworld",
             "title": "Hello World",
             "description": "Testing Katacoda Setup"
